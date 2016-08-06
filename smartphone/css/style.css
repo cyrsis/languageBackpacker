@@ -674,9 +674,7 @@ fieldset#body {
 	-o-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 }
-.temp_list li a:hover span,.temp_list li.active a span{
-	color:#e64c65;
-}
+
 .temp_list li a:hover,.temp_list li.active a{
 	background:#50597b;
 }

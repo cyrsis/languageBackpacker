@@ -70,31 +70,60 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	    <div class="wrap">
         <div class="column_middle add-word">
 
-          <div class="word-list-top">
-            <h3 class="add-word-header"><i class="fa fa-list-alt" aria-hidden="true"></i>&nbsp;&nbsp;Word List</h3><br>
+          <h3 class="add-word-header"><i class="fa fa-list-alt" aria-hidden="true"></i>&nbsp;&nbsp;Word List (4)</h3><br>
 
-            <div class="add-button">
-              +
+          <div class="filter">
+            <div class="filter-heading">
+              SORT BY
+            </div>
+
+            <select class="add-word-select">
+              <option value="date">Date</option>
+              <option value="category">Category</option>
+            </select>
+
+            <div class="chevron-filter">
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
             </div>
           </div>
 
+          <br>
+
           <div class="temp_list">
               <ul>
-                  <li><a href="./bitcoin.html">bitcoin
+                  <li><a href="./bitcoin.html">
+                    <div class="list-tag">tech</div>
+                    <span class="word">bitcoin</span>
+                    <span class="date">05/08</span>
                   <label class="digits"><i class="fa fa-chevron-right" aria-hidden="true"></i></label><div class="clear"></div></a></li>
-                  <li><a href="#">cloud
+                  <li><a href="#">
+                    <div class="list-tag">tech</div>
+                    <span class="word">cloud</span>
+                    <span class="date">05/08</span>
                   <label class="digits"><i class="fa fa-chevron-right" aria-hidden="true"></i></label><div class="clear"></div></a></li>
+                  <li><a href="#">
+                    <div class="list-tag">politics</div>
+                    <span class="word">legislation</span>
+                    <span class="date">05/08</span>
+                  <label class="digits"><i class="fa fa-chevron-right" aria-hidden="true"></i></label><div class="clear"></div></a></li>
+                  <li><a href="#">
+                    <div class="list-tag">tech</div>
+                    <span class="word">HTML</span>
+                    <span class="date">03/08</span>
+                  <label class="digits"><i class="fa fa-chevron-right" aria-hidden="true"></i></label><div class="clear"></div></a></li>
+                  <li class="add-word-from-word-list">
+                    <a href="add-word.html">
+                    <span class="add-word-heading">Add Word</span>
+                  <label class="digits"><i class="fa fa-plus-square-o" aria-hidden="true"></i></label><div class="clear"></div></a></li>
               </ul>
             </div>
-
-
  	    </div>
    </div>
    <nav id="menu">
      <ul>
-       <li><a href="#"><i><img src="smartphone/images/user.png"></i> Profile</a></li>
+       <li><a href="menu.html"><i><img src="smartphone/images/user.png"></i> Profile</a></li>
        <li><a href="#"><span><i><img src="smartphone/images/mail.png"></i> Messages</span><label class="digits active">5</label><div class="clear"></div></a></li>
-         <li><a href="#"><span> <i><img src="smartphone/images/invites.png"></i>Explore Teachers</span><label class="digits">2</label><div class="clear"></div></a></li>
+         <li><a href="explore.html"><span> <i><img src="smartphone/images/invites.png"></i>Explore Teachers</span><label class="digits">2</label><div class="clear"></div></a></li>
          <li><a href="word-list.html"><i><img src="smartphone/images/favourite.png" alt="" /></i>My Word List</a></li>
        <li><a href="#"><i><img src="smartphone/images/settings.png" alt="" /></i>Settings</a></li>
      </ul>
@@ -102,17 +131,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
      <script>
       $(document).ready(function() {
-        $('.tag-input').keypress(function (e) {
-          var key = e.which;
-          var term = $(this).val();
-          if (key == 13) {
-            $(this).val("");
-            $('.tags-list').append("<div class='single-tag'>" + term + "&nbsp;&nbsp;<i class='fa fa-times delete-tag' aria-hidden='true'></i></div>");
-          }
-        });
-
-        $('.tags-list').on('click', '.single-tag', function() {
-          $(this).remove();
+        $('.filter').change(function() {
+            $('.temp_list').html("<ul><li><a href='./bitcoin.html'><div class='list-tag'>tech</div><span class='word'>bitcoin</span><span class='date'>05/08</span><label class='digits'><i class='fa fa-chevron-right' aria-hidden='true'></i></label><div class='clear'></div></a></li><li><a href='#'><div class='list-tag'>tech</div><span class='word'>cloud</span><span class='date'>05/08</span><label class='digits'><i class='fa fa-chevron-right' aria-hidden='true'></i></label><div class='clear'></div></a></li><li><a href='#'><div class='list-tag'>tech</div><span class='word'>HTML</span><span class='date'>03/08</span><label class='digits'><i class='fa fa-chevron-right' aria-hidden='true'></i></label><div class='clear'></div></a></li><li><a href='#'><div class='list-tag'>politics</div><span class='word'>legislation</span><span class='date'>05/08</span><label class='digits'><i class='fa fa-chevron-right' aria-hidden='true'></i></label><div class='clear'></div></a></li><li class='add-word-from-word-list'><a href='add-word.html'><span class='add-word-heading'>Add Word</span><label class='digits'><i class='fa fa-plus-square-o' aria-hidden='true'></i></label><div class='clear'></div></a></li></ul>");
         });
       });
      </script>
