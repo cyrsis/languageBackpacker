@@ -385,8 +385,10 @@ fieldset#body {
 .week-month-year{
 	text-align:center;
 	margin-bottom:20px;
+  margin-top: -15px;
 }
 .week-month-year p{
+  font-size: 20px;
 	display:inline-block;
 	margin-left:5px;
 }

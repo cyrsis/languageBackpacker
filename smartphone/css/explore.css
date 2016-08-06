@@ -44,9 +44,9 @@
 }
 
 .reviewbox {
-	border: solid 2px #10a6a9;	
+	border: solid 2px #10a6a9;
 	color: white;
-	font-size: 12px; 
+	font-size: 12px;
 	margin-top: 20px;
 	font-size: 20px;
 
@@ -87,4 +87,5 @@
 	padding: 8px 16px;
 	font-size: 18px;
 	border-radius: 10px;
+	margin-top: 5px;
 }
