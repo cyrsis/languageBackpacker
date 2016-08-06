@@ -33,7 +33,7 @@ img{max-width:100%;}
       src: url(../fonts/Amble-Regular-webfont.ttf) format('truetype');
 }
 body{
-	font-family: 'ambleregular';
+  font-family: 'Nunito', sans-serif;
 	background:#1f253d;
 	margin:15px 0;
 }
@@ -80,7 +80,7 @@ body{
     background:url(../images/loginArrow.png) no-repeat 26px 8px;
     display:block;
     padding: 0 25px 0 0;
-    font-family: 'ambleregular';
+    font-family: 'Nunito', sans-serif;
 }
 #loginButton.active span {
     background-position:26px -20px;
@@ -674,9 +674,7 @@ fieldset#body {
 	-o-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 }
-.temp_list li a:hover span,.temp_list li.active a span{
-	color:#e64c65;
-}
+
 .temp_list li a:hover,.temp_list li.active a{
 	background:#50597b;
 }
@@ -832,7 +830,7 @@ fieldset#body {
     margin:0px auto;
     width:75%;
     -webkit-apperance:none;
-    font-family: 'ambleregular';
+    font-family: 'Nunito', sans-serif;
 }
 .newsletter input[type="submit"],.sign_in input[type="submit"]{
 	padding:15px 2.5em;
@@ -852,7 +850,7 @@ fieldset#body {
 	-o-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 	-webkit-appearance:none;
-	font-family: 'ambleregular';
+  font-family: 'Nunito', sans-serif;
 }
 .newsletter input[type="submit"]:hover{
         background: #0D9092;
@@ -1040,5 +1038,52 @@ select{
    margin:0px auto;
    width:75%;
    -webkit-apperance:none;
-   font-family: 'ambleregular';
+   font-family: 'Nunito', sans-serif;
+}
+
+.welcome-container {
+  margin-top: 25%;
+  text-align: center;
+}
+
+.welcome-container img {
+  width: 80%;
+}
+
+.welcome-container h1 {
+  font-size: 45px;
+  font-family: 'Nunito', sans-serif;
+  color: #11a8ab;
+  margin-top: 40px;
+}
+
+.welcome-container p {
+  color: white;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.buttons {
+  margin-top: 60px;
+}
+
+.buttons a {
+  color: white;
+}
+
+.sign-in-button {
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  border-radius: 10px;
+}
+
+.signup {
+  background-color: #11a8ab;
+  display: block;
+}
+
+.login {
+  border: 2px solid #11a8ab;
 }
