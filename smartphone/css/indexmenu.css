@@ -16,8 +16,33 @@
 }
 
 .online span {
-	margin-left:  30%;
+	margin-left:  20%;
 	position: relative;
 	top: -20px;
+	font-weight: 800;
+	font-size: 20px;
 
+}
+
+#button {
+	background-color: #10a6a9;
+	color: white;
+	padding: 4px;
+	font-size: 18px;
+	border-radius: 10px;
+	margin-right: 30px;
+	top: -45px;
+	margin-left: 300px;
+	position: relative;
+}
+
+#words{
+	position: relative;
+	left: 20%;
+	right: 50%;
+	font-size: 18px;
+	font-weight: 800;
+	color: white;
+	font-weight: 800;
+	
 }
