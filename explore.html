@@ -17,6 +17,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
  <script type="text/javascript" src="smartphone/js/jquery.easing.js"></script>
  <script type="text/javascript" src="smartphone/js/jquery.ulslide.js"></script>
  <!----Calender -------->
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
+
  <link rel="stylesheet" href="smartphone/css/explore.css" type="text/css"/>
   <link rel="stylesheet" href="smartphone/css/clndr.css" type="text/css" />
   <script src="smartphone/js/underscore-min.js"></script>
@@ -32,15 +35,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		});
 	</script>
 </head>
-<body>			       
-	    <div class="wrap">	 
+<body>
+	    <div class="wrap">
 	      <div class="header">
 	      	  <div class="header_top">
 	      	     	<div class="menu-ico"><a href="#menu"></a></div>
 					  <div class="profile_details">
 				    		   <div id="loginContainer">
-				    		   	<span id = "sessioname">Explore</span>   
-				                    <div id="loginBox">                
+                     <a id="loginButton" class=""><span>Anne Hathaway</span></a>
+				                    <div id="loginBox">
 				                      <form id="loginForm">
 				                        <fieldset id="body">
 				                            <div class="user-info">
@@ -48,31 +51,33 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							        			<ul>
 							        				<li class="profile active"><a href="#">Profile </a></li>
 							        				<li class="logout"><a href="#"> Logout</a></li>
-							        				<div class="clear"></div>		
+							        				<div class="clear"></div>
 							        			</ul>
-							        		</div>			                            
+							        		</div>
 				                        </fieldset>
 				                    </form>
 				                </div>
 				            </div>
-				             <div class="profile_img">	
+				             <div class="profile_img">
 				             	<a href=""><img src="smartphone/images/profile_img40x40.jpg" alt="" />	</a>
-				             </div>		
-				             <div class="clear"></div>		  	
-					    </div>	
-		 		      <div class="clear"></div>				 
+				             </div>
+				             <div class="clear"></div>
+					    </div>
+		 		      <div class="clear"></div>
 				   </div>
-			</div>	  					     
-	   </div>	  				 
-	  <div class="main">  
-	    <div class="wrap">  		 
-	  		
+			</div>
+	   </div>
+	  <div class="main">
+	    <div class="wrap">
+
+        <h3 class="explore-header"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;&nbsp;Explore Teachers</h3>
+
             <div class="column_middle">
               <div class="column_middle_grid1">
 		         <div class="profile_picture">
 		         	<div class = "explore">
 		        		<a href=""><img src="smartphone/images/person4.jpg" alt="" />	</a>
-		        	</div>		         
+		        	</div>
 		            <div class="profile_picture_name">
 		            	<h5 id = "name">Hello World</h5>
 		            	<p id="match">Matching 100%</p>
@@ -83,7 +88,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		           	  	<li><a href="#" class="red"> <img src="smartphone/images/comments.png" alt="" /> 13</a></li>
 		           	  	<li><a href="#" class="purple"> <img src="smartphone/images/views.png" alt="" /> 41</a></li>
 		           	  	<li><a href="#" class="yellow"> <img src="smartphone/images/likes.png" alt="" /> 89</a></li>
-		           	  	<div class="clear"></div>	
+		           	  	<div class="clear"></div>
 		           	  </ul>
 		           </div>
              </div>
@@ -92,7 +97,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		         <div class="profile_picture">
 		         	<div class="explore">
 		        		<a href=""><img src="smartphone/images/person4.jpg" alt="" />	</a>
-		        	</div>		         
+		        	</div>
 		            <div class="profile_picture_name">
 		            	<h5 id = "name">Bye World</h5>
 		            	<p id="match">Matching 70%</p>
@@ -103,23 +108,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		           	  	<li><a href="#" class="red"> <img src="smartphone/images/comments.png" alt="" /> 3</a></li>
 		           	  	<li><a href="#" class="purple"> <img src="smartphone/images/views.png" alt="" /> 1</a></li>
 		           	  	<li><a href="#" class="yellow"> <img src="smartphone/images/likes.png" alt="" /> 4</a></li>
-		           	  	<div class="clear"></div>	
+		           	  	<div class="clear"></div>
 		           	  </ul>
 		           </div>
-             </div>             
+             </div>
     	<div class="clear"></div>
  	 </div>
-   </div>   
+   </div>
    					<nav id="menu">
 							<ul>
 								<li><a href="#"><i><img src="smartphone/images/user.png"></i> Profile</a></li>
 								<li><a href="#"><span><i><img src="smartphone/images/mail.png"></i> Messages</span><label class="digits active">5</label><div class="clear"></div></a></li>
-						  		<li><a href="#"><span> <i><img src="smartphone/images/invites.png"></i>Explore Teacher</span><label class="digits">3</label><div class="clear"></div></a></li>
-						  		<li><a href="#"><i><img src="smartphone/images/favourite.png" alt="" /></i>My Dictionary</a></li>		
-								<li><a href="#"><i><img src="smartphone/images/settings.png" alt="" /></i>Settings</a></li>																
+						  		<li><a href="#"><span> <i><img src="smartphone/images/invites.png"></i>Explore Teachers</span><label class="digits">2</label><div class="clear"></div></a></li>
+						  		<li><a href="word-list.html"><i><img src="smartphone/images/favourite.png" alt="" /></i>My Word List</a></li>
+								<li><a href="#"><i><img src="smartphone/images/settings.png" alt="" /></i>Settings</a></li>
 							</ul>
 					 </nav>
 
 </body>
 </html>
-
