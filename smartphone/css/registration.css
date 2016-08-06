@@ -1,0 +1,20 @@
+.sign-up-header {
+  color: #10a6a9;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 800;
+}
+
+.sign_in input[type="submit"] {
+  background: #10a6a9;
+  font-size: 18px;
+}
+
+.sign_in {
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}

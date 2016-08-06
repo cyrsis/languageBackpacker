@@ -1,0 +1,23 @@
+.userOnline {
+	font-size: 30px;
+	color: #35cefb;
+	margin-top: 15px;
+	margin-bot: 25px;
+}
+.online {
+	color: white;
+	margin-top: 15px;
+	margin-left: 10px;
+}
+
+.online img{
+	width: 50px;
+	border-radius: 100%;
+}
+
+.online span {
+	margin-left:  30%;
+	position: relative;
+	top: -20px;
+
+}

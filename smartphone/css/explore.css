@@ -1,0 +1,19 @@
+.explore img{
+	border-radius: 100%;
+}
+
+#sessioname{
+	color: white;
+	font-size: 20px;
+	position: relative;
+	right: 100px;
+}
+
+#name{
+	color: white;
+	font-size: 20px;
+}
+
+#match {
+	color: #35cefb;
+}
