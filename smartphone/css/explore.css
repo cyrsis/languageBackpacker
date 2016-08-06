@@ -17,3 +17,15 @@
 #match {
 	color: #35cefb;
 }
+
+.explore-header {
+  color: #10a6a9;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 800;
+	margin-top: 20px;
+}
+
+.explore-header i {
+	font-size: 25px;
+}

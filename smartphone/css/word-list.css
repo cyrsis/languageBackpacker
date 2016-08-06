@@ -10,8 +10,14 @@ textarea:focus {
 .add-word-header {
   color: #10a6a9;
   font-size: 30px;
-  text-align: center;
+  text-align: left;
   font-weight: 800;
+  display: inline;
+}
+
+.add-button {
+  display: inline;
+  text-align: right;
 }
 
 .add-word-field {
