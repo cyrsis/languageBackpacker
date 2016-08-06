@@ -18,3 +18,8 @@ h1 {
   color: white;
   text-align: center;
 }
+
+.mini-logo {
+  height: 30px;
+  width: 30px;
+}
